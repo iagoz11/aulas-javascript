@@ -1,0 +1,1 @@
+const dobro = numero => numero * 2;
