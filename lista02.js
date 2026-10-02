@@ -1,0 +1,30 @@
+const elementosFake = [
+  {
+    tagName: 'DIV',
+    style: { color: 'blue', display: 'flex' },
+    classList: ['container', 'active']
+  },
+  {
+    tagName: 'H1',
+    style: { color: 'red', display: 'block' },
+    classList: ['title']
+  },
+  {
+    tagName: 'BUTTON',
+    style: { color: 'white', display: 'inline-block' },
+    classList: ['btn', 'btn-primary']
+  }
+];
+
+const elemento = elementosFake[0]
+for (let propriedade in elemento) {
+  console.log(propriedade + ":", elemento[propriedade]);
+}
+
+for (let elemento of elementosFake){
+    if(elemento.style.color === "blue"){
+        console.log(`O elemento ${elemento.tagName} é azul`);
+    }
+}
+
+elementosFake.forEach(elemento => console.log(elemento.tagName));
